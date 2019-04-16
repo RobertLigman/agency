@@ -96,7 +96,8 @@ nav li .active{
 
 .background-design{
     width: 100%;
-    background-image:linear-gradient(180deg,#000, transparent), url("layer-design.png");
+    background-image:-webkit-gradient(linear,left top, left bottom,from(#000), to(transparent)), url("layer-design.jpg");
+    background-image:linear-gradient(180deg,#000, transparent), url("layer-design.jpg");
     
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -169,7 +170,7 @@ nav li .active{
     width:100%;
 }
 .portfolio{
-    height:50vh;
+    /* height:50vh; */
     margin-top: 50px;
     min-height: 500px;
     overflow: hidden;
@@ -179,6 +180,7 @@ nav li .active{
     width: 100%;
 }
 .portfolio img{
+    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
 }
