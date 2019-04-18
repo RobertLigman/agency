@@ -105,7 +105,7 @@ nav li .active{
 
 .design{
     height:40vh;
-   min-height: 300px;
+   min-height: 350px;
    
    width: 100%;
    
@@ -183,4 +183,64 @@ nav li .active{
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
+}
+@media screen and (max-width:768px){
+    .what-we-do{
+        height: auto;
+    }
+    .portfolio img{
+        margin: 0;
+    }
+    .portfolio .images{
+        max-height: 540px;
+    }
+    nav ul{
+        height: 50vh;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+        
+    }
+    nav .logo{
+        justify-self:center; 
+    }
+    header{
+        height: auto;
+        padding-top: 0 !important;
+    }
+    .design{
+        text-align:center;
+        height: auto;
+        padding-top:0;
+    }
+    .background-design{
+        background-image: none;
+        margin:0;
+        padding: 0;
+    }
+    .design-col{
+        background-image: url("Layer-8.jpg");
+        background-size: cover;
+    }
+     .code-col{
+        background-image: url("Layer-7.jpg");
+         background-size: cover;
+    }
+    .design-col,.code-col{
+        padding:30px;
+    }
+    .design-col p,.code-col p{
+        width: auto;
+    }
+    .col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
 }
